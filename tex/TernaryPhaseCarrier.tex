@@ -1,0 +1,392 @@
+\documentclass[11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage[hidelinks]{hyperref}
+\usepackage{doi}
+
+% Map fi/ffi/fl ligature glyphs to Unicode so PDF full-text extraction (Zenodo indexing) is correct.
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+\theoremstyle{remark}
+\newtheorem{remark}{Remark}
+
+\newcommand{\CV}{\operatorname{CV}}
+\newcommand{\rl}{r_{\ell}}
+\newcommand{\SPi}{S_{\Pi}}
+
+\title{Ternary Phase Carrier: Colour Confinement, Generation Splitting,\\ and Koide Dispersion}
+
+\author{J. Beau\\
+Independent Researcher, France\\
+\texttt{jerome.beau@cosmochrony.org}}
+
+\date{2026}
+
+\begin{document}
+
+  \maketitle
+
+  \begin{abstract}
+    We record a single carrier hypothesis that would relate three otherwise separate facts of the fermionic
+    sector: the exact non-observability of individual colours in the confined regime, the appearance of three
+    massive generations, and the unit-dispersion (Koide) shape of the charged-lepton square-root masses.
+    The proposal is one complex three-phase carrier $z_g = S + A\,e^{i(\delta + 2\pi g/3)}$, $g = 0,1,2$, read in
+    two ways: its pure-phase part sums to zero over the three cube-root phases ($1 + \omega + \omega^2 = 0$), a
+    collective and exact cancellation identified with a colour-neutral class; its real part $S + A\cos(\delta +
+    2\pi g/3)$ is the square-root mass profile of the companion note~\cite{Beau2026kud}.
+    In this reading the singlet amplitude $S$ is the master dial: $S = 0$ is the pure-phase, sum-zero regime
+    (colour, confined); $S \neq 0$ opens the real-offset regime (positive masses); the balanced point $S =
+    \lVert\text{doublet}\rVert$ is singlet--doublet equipartition (Koide, $\CV = 1$); and the phase $\delta$ places
+    one generation near a node of the profile (the hierarchy).
+    This is a \emph{speculative bridge}, not a derivation.
+    It does not derive the Standard-Model charge assignments, anomaly cancellation, or the charged-lepton masses.
+    It identifies a candidate common origin for the colour triplet and the generation triplet, and states the
+    explicit construction charge sheet that any realisation would have to discharge.
+  \end{abstract}
+
+  \noindent\textbf{Keywords:}
+  ternary phase carrier; colour confinement; generation splitting; Koide relation; unit dispersion; sum-zero
+  cancellation; projective regime; singlet--doublet equipartition; speculative bridge.
+
+  \newpage
+
+  \tableofcontents
+
+  \newpage
+
+  \section{Position and status}
+    \label{sec:position}
+
+    The Cosmochrony fermionic sub-programme carries three facts that are, in the Standard Model, logically
+    independent.
+    First, colour is an exact, unbroken structure: the three colours are degenerate and no single colour is
+    extractable as an observable, a non-observability the framework already reads as the non-injective colour
+    projection of ENI~\cite{Beau2026l} and tests as an exactly degenerate colour triplet on
+    $\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$~\cite{Beau2026a35, Beau2026a36}.
+    Second, there are three massive generations, hierarchically split.
+    Third, the charged-lepton square-root masses have unit relative dispersion, the scale-free content of the
+    Koide relation~\cite{Beau2026kud}.
+    The number three recurs in all three, and their coincidence is not explained by treating colour and generation
+    as independent labels.
+
+    This note records the sharpest form of a hypothesis that would tie the three together with a single object,
+    without multiplying mechanisms.
+    Its status is deliberately bounded, and stated here once so that nothing downstream is mistaken for a result.
+
+    \begin{quote}
+      This note proposes a unifying carrier hypothesis.
+      It does not derive the Standard-Model charge assignments, anomaly cancellation, or the charged-lepton
+      masses.
+      It identifies a candidate bridge between the colour triplet and the generation triplet.
+    \end{quote}
+
+    The reason for a separate note is exactly this bounded status.
+    The companion unit-dispersion note~\cite{Beau2026kud} is a reliable target-invariant statement about the
+    charged leptons; the present hypothesis is broader~---~it relates colour, generation, and mass~---~and
+    speculative, so it is kept apart in order not to contaminate the clean results.
+
+  \section{The ternary phase carrier}
+    \label{sec:carrier}
+
+    \begin{definition}[Ternary phase carrier]
+      \label{def:carrier}
+      Let $S \ge 0$ (the singlet, or democratic, amplitude), $A \ge 0$ (the doublet, or oscillating, amplitude),
+      and $\delta$ a phase.
+      The ternary phase carrier is the triple of complex numbers
+      \begin{equation}
+        \label{eq:carrier}
+        z_g = S + A\,e^{i\left(\delta + \frac{2\pi g}{3}\right)}, \qquad g = 0, 1, 2 .
+      \end{equation}
+    \end{definition}
+
+    The carrier admits two readings, which are the two halves of one object rather than two hypotheses.
+
+    \paragraph{Pure-phase reading (sum-zero).}
+      The oscillating part alone, summed over the three equally spaced phases, cancels exactly:
+      \begin{equation}
+        \label{eq:sumzero}
+        \sum_{g=0}^{2} e^{i\left(\delta + \frac{2\pi g}{3}\right)}
+        = e^{i\delta}\,(1 + \omega + \omega^2) = 0, \qquad \omega = e^{2\pi i/3} .
+      \end{equation}
+      This is not the absence of the three components but their collective annulment: the three phases are present
+      at the level of the internal structure, yet no single phase is extractable, because the observable is their
+      vanishing sum.
+      This is precisely the language of a colour-neutral class~---~the colours are internally present but
+      projectively invisible, the sum falling into the neutral sector~\cite{Beau2026l, Beau2026a35, Beau2026a36}.
+
+    \paragraph{Real reading (offset profile).}
+      The real part of~\eqref{eq:carrier} is
+      \begin{equation}
+        \label{eq:realprofile}
+        \Re z_g = S + A\cos\!\left(\delta + \frac{2\pi g}{3}\right),
+      \end{equation}
+      which is exactly the cyclic square-root mass profile of the companion note~\cite{Beau2026kud} (there written
+      with $S = \bar r$ and $A = \sqrt2\,\bar r$).
+      The democratic offset $S$ makes the three values real and positive; the oscillating part supplies their
+      spread; the phase $\delta$ fixes which generation is light.
+
+    The complex sum-zero of the first reading and the real near-node of the second are not the same operation~---~one
+    is an exact, collective, complex cancellation, the other an approximate, individual, real amplitude minimum.
+    What relates them is precisely the offset $S$: suppressing $S$ leaves the pure-phase regime whose sum
+    vanishes; restoring $S$ opens the real-positive regime in which masses appear.
+    A single carrier, two lectures, with $S$ the switch between them.
+
+  \section{The singlet amplitude as the master dial}
+    \label{sec:dial}
+
+    Reading~\eqref{eq:carrier} through the amplitude $S$ organises the three facts as three values of one dial
+    together with one phase.
+
+    \begin{center}
+      \small
+      \begin{tabular}{@{}l l p{0.34\textwidth}@{}}
+        \hline
+        regime & carrier reading & phenomenon \\
+        \hline
+        $S = 0$ & pure phase, $\sum_g e^{i\phi_g} = 0$ & colour-neutral (confined) \\
+        $S \neq 0$ & real offset, positive values & massive sector opens \\
+        $S = \lVert\text{doublet}\rVert$ & singlet--doublet equipartition & Koide dispersion ($\CV = 1$) \\
+        $\delta$ near a node & one real amplitude annulled & hierarchy (light electron) \\
+        \hline
+      \end{tabular}
+    \end{center}
+
+    The equipartition row is the point of contact with the companion note.
+    For three cosines $120^\circ$ apart, $\langle \cos^2 \rangle = 1/2$, so the oscillating component has effective
+    norm $A/\sqrt2$; equality of the differentiating and democratic norms, $A/\sqrt2 = S$, is the single condition
+    \begin{equation}
+      \label{eq:equipartition}
+      \frac{A}{\sqrt2} = S
+      \quad\Longleftrightarrow\quad
+      \CV(\rl) = 1
+      \quad\Longleftrightarrow\quad
+      \theta(\rl, \mathbf 1) = 45^\circ,
+    \end{equation}
+    the unit-dispersion form of Koide~\cite{Beau2026kud}, with $\theta$ the angle to the democratic axis
+    $\mathbf 1 = (1,1,1)$.
+    The amplitude $\sqrt2$, the Koide angle $45^\circ$, and $\CV = 1$ are one content~---~singlet--doublet
+    equipartition of the carrier~---~and in the present language this is the balanced setting of the dial $S$.
+
+    The whole hypothesis then compresses to one sentence.
+
+    \begin{quote}
+      Colour is the pure-phase, sum-zero regime of the ternary carrier; mass is the real-offset, singlet-balanced
+      regime of the same carrier; hierarchy is the residual phase placement relative to a node.
+    \end{quote}
+
+    \begin{remark}[What the compression does and does not buy]
+      \label{rem:compress}
+      The gain is economy: one carrier and one dial replace three separate postulates (a colour structure, a
+      generation replication, a dispersion coincidence).
+      The cost is unchanged.
+      The dial reading fixes neither the balanced value $A = \sqrt2\,S$ (the form lock) nor the node phase $\delta$
+      (the placement lock); both remain open exactly as in the companion note~\cite{Beau2026kud}, and the placement
+      lock stays the harder, exponentially sensitive residue.
+      The carrier reorganises the open questions; it does not close them.
+      In particular the dial is a \emph{reparametrisation} of the carrier's regimes, not a derived dynamics: the
+      $S = 0 \to S \neq 0$ passage that ``opens the massive sector'' is constrained, and its most natural
+      realisation is already closed (Section~\ref{sec:chargesheet}, item~5).
+    \end{remark}
+
+    \begin{remark}[Equipartition as a marginal-stability edge, not a tuned value]
+      \label{rem:edge}
+      The balanced setting $A = \sqrt2\,S$ need not be read as a value the projection is tuned to, but as the one
+      configuration that survives a viability filter.
+      The two flanking regimes are sterile: as $\CV \to 0$ the three components coincide and no generation is
+      discernible (uniformity), while as $\CV \to \sqrt2$ one component dominates and the other two are annulled (no
+      plurality); only the midpoint $\CV = 1$ carries at once a common structure and a genuine multiplicity, the sole
+      regime in which a three-generation spectrum can both exist and propagate.
+      Equipartition would then be what remains once the uniform and the dominated regimes have failed to be
+      prolific~---~an edge of viability rather than a coincidence.
+      Two things make this more than an image.
+      First, a stability boundary is an \emph{equality} (marginal means exactly on the edge), not an interval, so it
+      can fix a sharp value; this is the mode in which the programme's admissibility and saturation conditions
+      already operate~\cite{Beau2026bim, Beau2026l}.
+      Second, and conversely, only a boundary can be fundamental at all: an interior point of a viable band would be
+      contingent (why this value and not a neighbour?), whereas an edge is forced, so being an edge is not incidental
+      to the hypothesis but is what would qualify $\CV = 1$ as fundamental.
+      In this reading the two locks of Remark~\ref{rem:compress} unify: equipartition is the viability
+      \emph{constraint} (stay on the edge), and the node placement of the phase $\delta$ is the \emph{objective}
+      (differentiate as far as possible), the observed spectrum pushing one amplitude near annulment while remaining
+      exactly on the edge $\CV = 1$.
+      In canonical form: the balanced value $\CV = 1$ should be read, if fundamental at all, not as a tuned interior
+      point of a viable interval but as a marginal-stability edge~---~the exact boundary at which generation
+      differentiation becomes maximal without destroying the common carrier.
+      This is speculative.
+      A derivation would require exhibiting the actual filter~---~a relaxation or an admissibility saturation~---~whose
+      unique marginal survivor is $\CV = 1$, and showing that the two flanks are genuinely inadmissible in the
+      corpus's own terms, not merely intuitively sterile.
+      Crucially, the edge reading is \emph{not} an independent argument for $\CV = 1$.
+      The candidate filter of Section~\ref{sec:filter} \emph{defines} $\CV \le 1$ as the admissible band, so that
+      $\CV = 1$ is its boundary holds by construction; the marginal-stability language is a reformulation of the
+      filter, not a second and independent piece of evidence.
+      All the content lies in justifying the filter itself: absent that, this remark restates the hypothesis and
+      must not be mistaken for a physical derivation of it.
+    \end{remark}
+
+  \section{A candidate admissibility filter}
+    \label{sec:filter}
+
+    The carrier reading suggests a natural but still hypothetical admissibility filter on the generation sector.
+    Decompose the real square-root profile into its democratic and differentiating parts,
+    \begin{equation}
+      \label{eq:decomp}
+      r = r_{\mathrm{sing}} + r_{\mathrm{dbl}},
+      \qquad r_{\mathrm{sing}} = \bar r\,\mathbf 1,
+      \qquad \langle r_{\mathrm{dbl}}, \mathbf 1 \rangle = 0 .
+    \end{equation}
+    Then $\lVert r_{\mathrm{sing}} \rVert = \sqrt3\,\bar r$ and $\lVert r_{\mathrm{dbl}} \rVert = \sqrt3\,\sigma_r$, so
+    \begin{equation}
+      \label{eq:ratio}
+      \frac{\lVert r_{\mathrm{dbl}} \rVert}{\lVert r_{\mathrm{sing}} \rVert} = \frac{\sigma_r}{\bar r} = \CV(r),
+    \end{equation}
+    and the Koide value is exactly the balanced condition
+    \begin{equation}
+      \label{eq:balanced}
+      \CV(r) = 1 \quad\Longleftrightarrow\quad \lVert r_{\mathrm{dbl}} \rVert = \lVert r_{\mathrm{sing}} \rVert .
+    \end{equation}
+
+    This equality should \emph{not} be read as a positivity edge of the real profile, because positivity gives the
+    wrong boundary.
+    For the continuous envelope $S + A\cos\phi$, positivity requires $A \le S$, hence
+    \begin{equation}
+      \label{eq:envelope}
+      \CV = \frac{A}{\sqrt2\,S} \le \frac{1}{\sqrt2} .
+    \end{equation}
+    This is precisely the obstruction met by the cascade ladder in the companion unit-dispersion
+    note~\cite{Beau2026kud}: the continuous envelope cannot reach the Koide value.
+    At the opposite end, the full positive cone of three discrete components has boundary $\CV = \sqrt2$, where one
+    component vanishes.
+    The Koide value $\CV = 1$ lies strictly between these two positivity boundaries.\footnote{%
+      Checked numerically: strictly positive triples with $1 < \CV < \sqrt2$ are abundant (e.g.\ $(0.11, 34.30,
+      1.34)$ gives $\CV = 1.33$ with all three components positive), so $\CV > 1$ is not excluded by positivity.
+      The continuous-envelope bound $\CV \le 1/\sqrt2$ and the positive-cone boundary $\CV = \sqrt2$ are the only
+      positivity edges, and $\CV = 1$ lies strictly between them.}
+
+    The candidate filter is therefore not positivity, nor a naive Born--Infeld saturation of the real envelope.
+    It is a discrete capacity balance,
+    \begin{equation}
+      \label{eq:filter}
+      \boxed{\ \lVert r_{\mathrm{dbl}} \rVert \le \lVert r_{\mathrm{sing}} \rVert\ } .
+    \end{equation}
+    The differentiating generation doublet may spend at most the capacity carried by the democratic singlet.
+    Projection locking then selects the saturated admissible edge,
+    \begin{equation}
+      \label{eq:filter-sat}
+      \boxed{\ \lVert r_{\mathrm{dbl}} \rVert = \lVert r_{\mathrm{sing}} \rVert\ }
+      \quad\Longleftrightarrow\quad \CV(r) = 1 .
+    \end{equation}
+
+    In this corrected reading the two flanks have different statuses.
+    For $\CV < 1$, the generation doublet has unused capacity: the sector is under-resolved and not maximally
+    differentiating.
+    For $\CV > 1$, the doublet exceeds the singlet capacity: the differentiating sector would carry more projective
+    weight than the common carrier.
+    The open question is not whether such triples can be positive~---~they can~---~but which projective capacity or
+    entropy principle forbids this excess.
+
+    Two distinct notions of discreteness must be separated here, and separating them reconciles this filter with the
+    companion note.
+    The discrete-to-continuous bridge that the companion note~\cite{Beau2026kud} calls its deepest lock is specific
+    to its \emph{max-entropy} route, where $\CV = 1$ is read off a continuous probability density and does not
+    transfer to three discrete masses.
+    In the present carrier framing that transfer does not arise: three phases exactly $120^\circ$ apart inherit the
+    amplitude-fixed dispersion \emph{exactly}, $\CV = A/(\sqrt2\,S)$ independently of the placement $\delta$, so
+    $\CV = 1 \iff A = \sqrt2\,S$ holds directly on the discrete triple.
+    What is genuinely discrete here is instead a positivity fact about the carrier envelope: the continuous profile
+    $S + A\cos\phi$ is nonnegative only up to $\CV = 1/\sqrt2$, whereas $\CV = 1$ (with $A = \sqrt2\,S$) has the
+    envelope negative between the sampled points, so the Koide value is admissible only because the carrier is read
+    at three points and not as a whole envelope.
+    The remaining question is therefore not a density-to-discrete transfer but the single amplitude condition
+    $A = \sqrt2\,S$~---~the saturated capacity balance~---~meaningful only at the generation-discrete level.
+
+    \begin{remark}[Status of the filter]
+      \label{rem:filter-status}
+      The filter above is a hypothesis, not a theorem.
+      Its value is to locate the remaining mechanism sharply: the positivity and continuous-envelope routes give the
+      wrong boundary and are therefore excluded as sources of $\CV = 1$.
+      A derivation would have to produce the capacity inequality
+      $\lVert r_{\mathrm{dbl}} \rVert \le \lVert r_{\mathrm{sing}} \rVert$ from an existing projective
+      quantity~---~the projection entropy $\SPi$~\cite{Beau2026l}, a generation-level capacity functional, or an
+      admissibility principle on the ternary carrier.
+      Until such an object is exhibited, the filter remains a structured open test.
+    \end{remark}
+
+  \section{The construction charge sheet}
+    \label{sec:chargesheet}
+
+    A carrier hypothesis of this kind is a front of construction, not a veto and not a result.
+    Its cautious form must be maintained: the leptons are \emph{not} to be read as hidden coloured composites,
+    which would be experimentally dangerous, since leptons are observed as exact colour singlets and as pointlike.
+    The safe statement is that the lepton sector retains a projective trace of the ternary carrier while its colour
+    component is exactly neutralised in the observable~---~the erased content is unobservable but may leave a
+    residual invariant, which is a distinction the projective framework is built to express~\cite{Beau2026l}.
+    Any realisation of the hypothesis must then discharge, at least, the following.
+    \begin{enumerate}
+      \item Produce an \emph{exact} colour singlet (the sum-zero regime, not an approximate one).
+      \item Keep three \emph{discernible} generations after neutralisation, so that colour neutrality does not
+        collapse the generation count (the colourless leptons must still carry three generations).
+      \item Reproduce the leptons' weak isospin and hypercharge assignments, not merely their colourlessness.
+      \item Preserve gauge-anomaly cancellation generation by generation, as in the Standard Model.
+      \item Explain the selection rule: why the quark regime keeps an observable colour residue while the lepton
+        regime cancels it exactly.
+    \end{enumerate}
+    Items~1--4 are concrete demands rather than obstructions of principle.
+    Item~5, however, is sharper than concrete work still to do, because its most natural realisation is already
+    closed by the corpus.
+    The obvious reading of the $S = 0 \to S \neq 0$ passage would be that neutralising the colour triplet is itself
+    what produces the differentiated generation spectrum~---~turning the dial $S$ up along the colour route.
+    That route is excluded.
+    The colour triplet is tested \emph{exactly degenerate} on $\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$~---~rank one,
+    equal singular values, and vanishing sum (a pure doublet, no singlet component)~\cite{Beau2026a35, Beau2026a36};
+    and the projection is forgetful, with strictly positive projection entropy $\SPi > 0$~\cite{Beau2026l}, so it
+    cannot manufacture a spread from a rank-one, structureless input.
+    A lossy map does not create the differentiation it is not given: the generation splitting therefore cannot be
+    read off the colour neutralisation itself, and the breaking that carries $S \neq 0$ must be seeded from outside
+    the colour sector.
+    The dial language must not obscure this~---~the amplitude $S$ is a reparametrisation of the carrier's two
+    regimes, not a derived dynamics interpolating between them, and its most natural dynamical realisation, colour
+    turning into flavour under the projection, is precisely the one the corpus has closed.
+    The quark--lepton relation is not exotic in isolation~---~Pati--Salam unification already treats lepton number
+    as a fourth colour, and is bounded (by proton-decay and rare-decay limits) rather than excluded; but the present
+    hypothesis is a further and distinct step, relating colour to the \emph{generation} triad, and for that step the
+    colour-neutralisation route to the splitting is not merely unbuilt but closed.
+    Items~4 and~5 are where the real work sits, and item~5 must look beyond colour neutralisation for the source of
+    the breaking.
+
+  \section{Status}
+    \label{sec:status}
+
+    The content of this note is a hypothesis with a precise shape and a bounded claim.
+    The carrier $z_g = S + A\,e^{i(\delta + 2\pi g/3)}$ has an exact pure-phase sum-zero~\eqref{eq:sumzero} and a
+    real part~\eqref{eq:realprofile} that coincides with the square-root mass profile of the companion
+    note~\cite{Beau2026kud}; these two statements are exact algebra.
+    The organisation of colour, mass, and Koide dispersion as three settings of the singlet dial $S$ plus one
+    phase $\delta$ is a \emph{reading}, internally consistent and economical, but not derived: the corpus supplies
+    the colour sum-zero~\cite{Beau2026l, Beau2026a35, Beau2026a36} and the real square-root profile~\cite{Beau2026kud}
+    as separate facts, and their unification as the imaginary-phase and real-offset faces of one carrier is the
+    hypothesis, not a theorem.
+    The charge sheet of Section~\ref{sec:chargesheet} is the price of turning the reading into a mechanism, and it
+    is unpaid.
+    In particular this note does not fix the equipartition value $A = \sqrt2\,S$, does not fix the node phase
+    $\delta$, and does not derive the Standard-Model quantum numbers or anomaly cancellation.
+    Whether the projection entropy $\SPi$ of the non-injective map~\cite{Beau2026l}, or a related variational
+    principle, forces the balanced setting of the dial is the same open test recorded for the unit-dispersion
+    target~\cite{Beau2026kud}, now phrased on the carrier.
+    The working conclusion is only that the three facts \emph{can} be written as one carrier read three ways~---~a
+    candidate bridge, held at the level of a speculative outlook.
+
+  \newpage
+
+  \bibliographystyle{plain}
+  \bibliography{cosmochrony-bibliography}
+
+\end{document}
