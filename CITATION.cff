@@ -7,7 +7,7 @@ authors:
     given-names: "Jérôme"
 repository-code: "https://github.com/Cosmochrony/ternary-phase-carrier"
 url: "https://cosmochrony.org/science/fermionic-matter/ternary-phase-carrier/"
-version: "1.1"
+version: "1.1.1"
 doi: "10.5281/zenodo.21115977"
 license: "CC-BY-4.0"
 preferred-citation:
