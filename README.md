@@ -4,7 +4,7 @@ J. Beau, Independent Researcher, France
 
 ## Status
 
-Preprint, v1.0. Concept DOI: [10.5281/zenodo.21115977](https://doi.org/10.5281/zenodo.21115977)
+Working paper, v1.2 (local candidate; last deposited version 1.1.1). Concept DOI: [10.5281/zenodo.21115977](https://doi.org/10.5281/zenodo.21115977)
 
 Speculative bridge (reconnaissance): it proposes a unifying carrier hypothesis; it is **not** a derivation and
 does not fix the Standard-Model quantum numbers or the masses.
